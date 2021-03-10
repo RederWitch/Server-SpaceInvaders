@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px Arial, sans-serif;
+  background-color: #cfa6f1;
+}
+
+h1{
+  font-size: 60px;
+  color: black;
+}
+
+p{
+  font-size: 20px;
+  color: black;
+
+}
+
+#author{
+  font-size: 15px;
+  color: black;
+}
+
+button{
+  font-size: 20px;
+}
+
+a {
+  color: #00B7FF;
+}
+

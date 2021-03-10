@@ -1,0 +1,7 @@
+SPACE-INVADERS Score Board:
+Player: Bożydar	Lv: 1	Score: 20	2020-2-19 19:05:06
+Player: kjfdnhdk;jfn	Lv: 1	Score: 30	2020-2-19 19:06:57
+Player: Wiki	Lv: 2	Score: 60	2020-2-20 10:31:04
+Player: Test	Lv: 1	Score: 30	2020-2-20 12:36:43
+Player: Maciuś	Lv: 12	Score: 350	8.08.2020 19:28:43
+Player: dddddd	Lv: 1	Score: 10	8.08.2020 19:38:00

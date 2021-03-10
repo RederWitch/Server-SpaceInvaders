@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>SpaceInvaders</title>
+    <style>
+        /*fullscreen canvas, no scrollbars*/
+        body, html{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        button{
+            font-size: 20px;
+        }
+        /*background style*/
+        #starfield{
+            width:100%;
+            height:100%;
+            z-index: -1;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        /*place for SI style*/
+    </style>
+    <!--*including js -->
+    <script src="/javascripts/starfield2.js"></script>
+    <script src="/javascripts/spaceinvaders.js"></script>
+    <script src="/javascripts/Ship.js"></script>
+    <script src="/javascripts/Alien.js"></script>
+    <script src="/javascripts/Bullet.js"></script>
+    <script src="/javascripts/handlerPost.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+
+
+<body>
+    <!--place for SI HTML -->
+    <!-- background HTML -->
+    <div id = "starfield"></div>
+
+    <script>
+        /* place for JS*/
+        // creation of background
+        var container = document.getElementById('starfield');
+        var starfield = new Starfield();
+        starfield.initialise(container);
+        starfield.start();
+
+        var GameSpace = new Game(800,600);
+        GameSpace.setUp();
+        GameSpace.start();
+    </script>
+<!--
+    <script>
+        function send( urlToPost, urlToGo, msg ){
+            if($.post( urlToPost,{
+                "points": GameSpace.score
+            } )){
+                alert(msg);
+                window.location.href = urlToGo;
+            }
+        }
+
+    </script>
+-->
+    <ul style="list-style-type:none; margin-left: 20%">
+        <li>
+            <a href="/">
+                <button id="btn_newGame" style="visibility: hidden">New Game</button>
+            </a>
+        </li>
+        <li>
+            <button id="btn_save" style="visibility: hidden" onclick="send('/to_save', '/save', 'Your score will be automaticly saved on next site')">Save</button>
+        </li>
+        <li>
+            <button id="btn_nextLevel" style="visibility: hidden" onclick="send('/to_nextLevel', '/game', 'The new lv start after u press ok')">Next Level</button>
+        </li>
+    </ul>
+
+</body>
+
+
+</html>

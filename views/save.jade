@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  block.header header
+    h1= title
+  block.content content
+    p We saved your score in StoryBoard file.
+    p Ended already? Why not play once again?
+    a(href="/")
+      button New Game
+
